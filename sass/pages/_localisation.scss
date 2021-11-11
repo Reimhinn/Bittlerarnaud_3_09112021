@@ -1,0 +1,21 @@
+.localisation{
+  background-color: #eaeaea;
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+
+    &__i {
+      padding-right: 1.7rem;
+      color:#353535;
+      opacity: $local-opacity;
+    }
+
+    &__text {
+      margin: 0;
+      margin-right: 2.7rem;
+      color: #353535;
+      font-weight: bold;
+      opacity: $local-opacity;
+    }
+}

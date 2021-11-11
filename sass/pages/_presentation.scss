@@ -1,0 +1,16 @@
+.presentation{
+  background-color: #f6f6f6;
+  padding: 3.2rem;
+  text-align: center;
+
+
+    &__h2 {
+      margin: 0 1.2rem;
+      font-weight: bold;
+    }
+
+    &__p {
+      margin-top: 1rem;
+      opacity: 0.7;
+    }
+}

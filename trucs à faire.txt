@@ -1,2 +1,1 @@
-faire un wrapper
 determiner les sections à faire
