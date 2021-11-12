@@ -1,5 +1,5 @@
 .localisation{
-  background-color: #eaeaea;
+  background-color: $local-background-color;
   display: flex;
   justify-content: center;
   padding: 1.5rem;
@@ -7,14 +7,14 @@
 
     &__i {
       padding-right: 1.7rem;
-      color:#353535;
+      color: $tertiary-background-color;
       opacity: $local-opacity;
     }
 
     &__text {
       margin: 0;
       margin-right: 2.7rem;
-      color: #353535;
+      color: $tertiary-background-color;
       font-weight: bold;
       opacity: $local-opacity;
     }
