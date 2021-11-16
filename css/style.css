@@ -15,12 +15,18 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
   margin: 0;
+}
+
+.wrapper {
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
 .localisation {
@@ -65,7 +71,14 @@ body {
   border: none;
   font-size: 1.4rem;
   font-weight: bold;
+  transition: all 500ms;
+  transform: scale(1);
   margin: 0.9rem 0;
+}
+.presentation__button:hover {
+  cursor: pointer;
+  opacity: 0.9;
+  transform: scale(0.99);
 }
 
 .explanation__h2 {
@@ -112,6 +125,94 @@ body {
 .explanation__text {
   font-size: 1.6rem;
   margin-left: 0.5rem;
+}
+
+.restaurants {
+  background-color: #f6f6f6;
+}
+.restaurants__h2 {
+  padding-top: 5rem;
+  margin-left: 2rem;
+}
+.restaurants__cards-list {
+  padding: 0 2rem;
+  list-style-type: none;
+}
+.restaurants .restaucard {
+  background-color: white;
+  width: 100%;
+  border-radius: 1.5rem;
+  margin: 2.5rem 0;
+  transform: scale(1);
+  transition: all 400ms;
+}
+.restaurants .restaucard:hover {
+  transform: scale(0.99);
+}
+.restaurants .restaucard__link {
+  text-decoration: none;
+  color: black;
+}
+.restaurants .restaucard__img {
+  width: 100%;
+  border-radius: 1.3rem 1.3rem 0 0;
+  object-fit: cover;
+  margin: 0;
+  height: 18rem;
+}
+.restaurants .restaucard__footer {
+  padding: 1rem;
+}
+.restaurants .restaucard__flex {
+  display: flex;
+  justify-content: space-between;
+}
+.restaurants .restaucard__h3 {
+  margin: 0.3rem 0;
+}
+.restaurants .restaucard__heart {
+  font-size: 2.5rem;
+  position: relative;
+  bottom: 1.8rem;
+  right: 1rem;
+}
+.restaurants .restaucard__heart:hover {
+  background: linear-gradient(#FF79DA, #9356DC);
+}
+.restaurants .restaucard__p {
+  margin: 0;
+}
+
+.footer {
+  background-color: #353535;
+}
+.footer__h2 {
+  color: white;
+  font-family: "Shrikhand", cursive;
+  font-weight: 500;
+  font-size: 1.8rem;
+  padding-top: 2rem;
+  padding-left: 2.2rem;
+  opacity: 0.9;
+}
+.footer__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 0 2rem 2.2rem;
+}
+.footer__list-element {
+  color: white;
+  padding-bottom: 0.5rem;
+}
+.footer__list-icon {
+  margin-right: 1rem;
+  font-size: 1.3rem;
+  opacity: 0.9;
+}
+.footer__list-text {
+  color: white;
+  text-decoration: none;
+  opacity: 0.9;
 }
 
 /*# sourceMappingURL=style.css.map */

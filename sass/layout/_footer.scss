@@ -1,0 +1,38 @@
+.footer {
+  background-color: $tertiary-background-color;
+
+  &__h2 {
+    color: white;
+    font-family: 'Shrikhand', cursive;
+    font-weight: 500;
+    font-size: 1.8rem;
+    padding-top: 2rem;
+    padding-left: 2.2rem;
+    opacity: $local-opacity;
+  }
+
+  &__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 0 2rem 2.2rem;
+
+  }
+
+  &__list-element {
+    color: white;
+    padding-bottom: 0.5rem;
+  }
+
+  &__list-icon {
+    margin-right: 1rem;
+    font-size: 1.3rem;
+    opacity: $local-opacity;
+  }
+
+  &__list-text {
+    color: white;
+    text-decoration: none;
+    opacity: $local-opacity;
+  }
+
+}

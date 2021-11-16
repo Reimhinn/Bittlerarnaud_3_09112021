@@ -6,4 +6,12 @@
   border: none;
   font-size: 1.4rem;
   font-weight: bold;
+  transition: all 500ms;
+  transform: scale(1);
+
+        &:hover {
+          cursor: pointer;
+          opacity: 0.9;
+          transform: scale(0.99);
+        }
 }

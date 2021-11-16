@@ -1,0 +1,71 @@
+.restaurants {
+  background-color: $secondary-background-color;
+
+  &__h2 {
+    padding-top: 5rem;
+    margin-left: 2rem;
+  }
+
+  &__cards-list {
+    padding: 0 2rem;
+    list-style-type: none;
+  }
+
+  .restaucard {
+
+    background-color: white;
+    width: 100%;
+    border-radius: 1.5rem;
+    margin: 2.5rem 0;
+    transform: scale(1);
+    transition: all 400ms;
+
+    &:hover {
+      transform: scale(0.99);
+    }
+
+
+    &__link {
+      text-decoration: none;
+      color: black;
+    }
+
+    &__img {
+      width: 100%;
+      border-radius: 1.3rem 1.3rem 0 0;
+      object-fit: cover;
+      margin : 0;
+      height: 18rem;
+    }
+
+    &__footer {
+      padding: 1rem;
+    }
+
+    &__flex {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__h3 {
+      margin : 0.3rem 0;
+    }
+
+    &__heart {
+      font-size: 2.5rem;
+      position: relative;
+      bottom: 1.8rem;
+      right: 1rem;
+
+        &:hover {
+          background: linear-gradient($secondary-color, $primary-color);
+        }
+    }
+
+    &__p {
+      margin : 0;
+
+    }
+
+  }
+}
