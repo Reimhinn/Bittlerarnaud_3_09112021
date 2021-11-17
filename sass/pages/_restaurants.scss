@@ -1,5 +1,6 @@
 .restaurants {
   background-color: $secondary-background-color;
+  padding-bottom: 4rem;
 
   &__h2 {
     padding-top: 5rem;
@@ -56,6 +57,7 @@
       position: relative;
       bottom: 1.8rem;
       right: 1rem;
+      @include heart;
 
         &:hover {
           background: linear-gradient($secondary-color, $primary-color);

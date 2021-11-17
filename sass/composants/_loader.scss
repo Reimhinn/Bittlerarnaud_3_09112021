@@ -1,0 +1,38 @@
+.loader {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  border: solid 1.5rem white;
+  border-top: solid 1.5rem #FF79DA;
+  border-bottom: solid 1.5rem #9356DC;
+  background: linear-gradient(#FF79DA, #9356DC);
+  animation: spin 1.2s ease-in-out infinite;
+  opacity: 0.7;
+  position: absolute;
+  display: none;
+
+
+
+    &__circle{
+      width: 10rem;
+      height: 10rem;
+      border-radius: 50%;
+      border: solid 10px white;
+    }
+
+    &__text{
+      color: white;
+      position: absolute;
+      top: 6.5rem;
+      left: 3.3rem;
+      font-family: 'Shrikhand', cursive;
+      opacity: 0.7;
+      font-size: 1.5rem;
+      display: none;
+    }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

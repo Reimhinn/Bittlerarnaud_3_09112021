@@ -1,18 +1,3 @@
-.header {
-  position: relative;
-  z-index: 2;
-  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
-}
-.header__logo {
-  font-weight: 500;
-  font-size: 3rem;
-  font-family: "Shrikhand", cursive;
-  text-align: center;
-  margin: 0;
-  padding-top: 1rem;
-  padding-bottom: 0.5rem;
-}
-
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
@@ -22,6 +7,66 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
   margin: 0;
+}
+
+.loader {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  border: solid 1.5rem white;
+  border-top: solid 1.5rem #FF79DA;
+  border-bottom: solid 1.5rem #9356DC;
+  background: linear-gradient(#FF79DA, #9356DC);
+  animation: spin 1.2s ease-in-out infinite;
+  opacity: 0.7;
+  position: absolute;
+  display: none;
+}
+.loader__circle {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  border: solid 10px white;
+}
+.loader__text {
+  color: white;
+  position: absolute;
+  top: 6.5rem;
+  left: 3.3rem;
+  font-family: "Shrikhand", cursive;
+  opacity: 0.7;
+  font-size: 1.5rem;
+  display: none;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.header {
+  position: relative;
+  z-index: 2;
+  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
+}
+.header__arrow {
+  font-size: 1.9rem;
+  position: absolute;
+  top: 2.3rem;
+  left: 2.2rem;
+  color: #353535;
+}
+.header__logo {
+  font-weight: 500;
+  font-size: 3rem;
+  font-family: "Shrikhand", cursive;
+  text-align: center;
+  margin: 0;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
 }
 
 .wrapper {
@@ -129,6 +174,7 @@ body {
 
 .restaurants {
   background-color: #f6f6f6;
+  padding-bottom: 4rem;
 }
 .restaurants__h2 {
   padding-top: 5rem;
@@ -194,15 +240,16 @@ body {
   padding-top: 2rem;
   padding-left: 2.2rem;
   opacity: 0.9;
+  margin-top: 0;
 }
 .footer__list {
   list-style-type: none;
   margin: 0;
-  padding: 0 0 2rem 2.2rem;
+  padding: 0 0 3rem 2.2rem;
 }
 .footer__list-element {
   color: white;
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.7rem;
 }
 .footer__list-icon {
   margin-right: 1rem;
@@ -213,6 +260,38 @@ body {
   color: white;
   text-decoration: none;
   opacity: 0.9;
+}
+
+.background-picture {
+  width: 100%;
+}
+.background-picture__img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.menu {
+  background-color: #f6f6f6;
+  border-radius: 4rem;
+  position: relative;
+  z-index: 100;
+  bottom: 5.3rem;
+}
+.menu__flex-title {
+  display: flex;
+}
+.menu__title {
+  font-family: "Shrikhand", cursive;
+  flex-grow: 1;
+  font-weight: 500;
+  margin-left: 2rem;
+  font-size: 2.7rem;
+}
+.menu__heart {
+  font-size: 2.2rem;
+  display: flex;
+  align-items: center;
+  margin-right: 4rem;
 }
 
 /*# sourceMappingURL=style.css.map */

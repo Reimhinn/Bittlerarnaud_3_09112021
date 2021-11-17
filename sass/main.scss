@@ -1,10 +1,13 @@
-@import "./layout/header";
 @import "./utils/variables";
 @import "./utils/mixins";
 @import "./base/fonts";
+@import "./composants/loader";
+@import "./layout/header";
 @import "./layout/wrapper";
 @import "./pages/localisation";
 @import "./pages/presentation";
 @import "./pages/explanation";
 @import "./pages/restaurants";
 @import "./layout/footer";
+@import "./pages/background-picture";
+@import "./pages/menu";

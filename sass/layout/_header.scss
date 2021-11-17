@@ -2,6 +2,15 @@
   position: relative;
   z-index: 2;
   box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.10);
+
+    &__arrow {
+      font-size: 1.9rem;
+      position: absolute;
+      top: 2.3rem;
+      left: 2.2rem;
+      color: $tertiary-background-color;
+    }
+
     &__logo {
       font-weight: 500;
       font-size: 3rem;
