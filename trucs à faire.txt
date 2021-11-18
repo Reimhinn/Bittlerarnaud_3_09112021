@@ -1,1 +1,10 @@
-determiner les sections à faire
+border shadow sur bouton hover
+mettre l'adresse mail sur "contact"
+faire le html des autres pages
+animation de selection de plat
+
+A voir avec Ceeb :
+
+mettre le loader
+régler problème du coeur (flex et animation)
+faire le responsive (voir pour le wrapper)

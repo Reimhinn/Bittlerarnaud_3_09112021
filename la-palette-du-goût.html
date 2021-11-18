@@ -20,14 +20,14 @@
     </div>
   </header>
 
-  <main>
+  <main class="main-background">
 
     <section class="background-picture">
       <img class="background-picture__img" src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
     </section>
 
     <section class="menu">
-      <div class="wrapper">
+      <div class="wrapper menu__wrapper">
         <div class="menu__flex-title">
           <h1 class="menu__title">La palette du goût</h1>
           <i class="far fa-heart menu__heart"></i>
@@ -37,14 +37,74 @@
           <ul class="meals">
             <li class="meals__meal">
               <h3 class="meals__title">Fricassée d'escargot</h3>
-              <p class="meals__description">Au piment d'Espelette </p>
-              <strong class="meals__price">35€</strong>
+              <div class="meals__flex">
+                <p class="meals__description">Au piment d'Espelette</p>
+                <strong class="meals__price">25€</strong>
+              </div>
             </li>
-            <li class="meals__meal"></li>
-            <li class="meals__meal"></li>
+            <li class="meals__meal"><h3 class="meals__title">Foie gras de canard mi-cuit</h3>
+              <div class="meals__flex">
+                <p class="meals__description">Et ses copeaux de truffe noire</p>
+                <strong class="meals__price">35€</strong>
+              </div>
+            </li>
+            <li class="meals__meal"><h3 class="meals__title">Oeuf au plat</h3>
+              <div class="meals__flex">
+                <p class="meals__description">Assaisonné à la truffe sur lit de caviar</p>
+                <strong class="meals__price">20€</strong>
+              </div>
+            </li>
+          </ul>
+          <h2 class="menu__h2">PLATS</h2>
+          <ul class="meals">
+            <li class="meals__meal">
+              <h3 class="meals__title">Filet de boeuf aux herbes</h3>
+              <div class="meals__flex">
+                <p class="meals__description">Accompagné de sa ribambelle de légumes</p>
+                <strong class="meals__price">40€</strong>
+              </div>
+            </li>
+            <li class="meals__meal"><h3 class="meals__title">Parmentier de queue de boeuf</h3>
+              <div class="meals__flex">
+                <p class="meals__description">À la truffe noire sur sa purée de panais</p>
+                <strong class="meals__price">35€</strong>
+              </div>
+            </li>
+            <li class="meals__meal"><h3 class="meals__title">Filet de turbot</h3>
+              <div class="meals__flex">
+                <p class="meals__description">Aux agrumes</p>
+                <strong class="meals__price">44€</strong>
+              </div>
+            </li>
+          </ul>
+          <h2 class="menu__h2">DESSERTS</h2>
+          <ul class="meals">
+            <li class="meals__meal">
+              <h3 class="meals__title">Paris-Brest</h3>
+              <div class="meals__flex">
+                <p class="meals__description">Revisité</p>
+                <strong class="meals__price">18€</strong>
+              </div>
+            </li>
+            <li class="meals__meal"><h3 class="meals__title">Macaron au chocolat d'exception</h3>
+              <div class="meals__flex">
+                <p class="meals__description">Et glace à la vanille de Madagascar</p>
+                <strong class="meals__price">22€</strong>
+              </div>
+            </li>
+            <li class="meals__meal"><h3 class="meals__title">Mousse au chocolat</h3>
+              <div class="meals__flex">
+                <p class="meals__description">Au piment d'Espelette et à la truffe noire</p>
+                <strong class="meals__price">23€</strong>
+              </div>
+            </li>
           </ul>
         </div>
-      </div>
+        <div class="btn-wrapper">
+          <a class="menu__order" href="#"><button class="menu__button">Commander</button></a>
+        </div>
+     </div>
+
     </section>
 
   </main>
