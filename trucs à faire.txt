@@ -1,10 +1,12 @@
 border shadow sur bouton hover
-mettre l'adresse mail sur "contact"
-faire le html des autres pages
+régler le problème des btn dans les a
 animation de selection de plat
+animation d'apparition de plat
 
-A voir avec Ceeb :
+A voir pendant le mentorat :
 
+taille de image note enchantée
 mettre le loader
 régler problème du coeur (flex et animation)
 faire le responsive (voir pour le wrapper)
+interaction pseudo element
