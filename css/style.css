@@ -110,7 +110,6 @@ body {
 }
 .presentation__button {
   background: linear-gradient(#FF79DA, #9356DC);
-  color: white;
   padding: 1.5rem 2rem;
   border-radius: 3rem;
   border: none;
@@ -125,6 +124,11 @@ body {
   cursor: pointer;
   opacity: 0.9;
   transform: scale(0.99);
+}
+.presentation__link {
+  color: white;
+  text-decoration: none;
+  padding: 1.5rem 0;
 }
 
 .explanation__h2 {
@@ -269,6 +273,7 @@ body {
 .background-picture__img {
   width: 100%;
   object-fit: cover;
+  height: 28rem;
 }
 
 .main-background {
@@ -317,12 +322,13 @@ body {
   position: absolute;
   margin-top: 2.2rem;
 }
-.menu__order {
-  align-items: center;
+.menu__link {
+  color: white;
+  text-decoration: none;
+  padding: 1.5rem 0;
 }
 .menu__button {
   background: linear-gradient(#FF79DA, #9356DC);
-  color: white;
   padding: 1.5rem 2rem;
   border-radius: 3rem;
   border: none;

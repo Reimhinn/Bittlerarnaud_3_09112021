@@ -56,8 +56,8 @@
 
     }
 
-    &__order {
-      align-items: center;
+    &__link {
+      @include link;
     }
 
     &__button {
