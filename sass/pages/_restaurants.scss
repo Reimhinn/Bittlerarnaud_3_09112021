@@ -53,15 +53,8 @@
     }
 
     &__heart {
-      font-size: 2.5rem;
-      position: relative;
-      bottom: 1.8rem;
-      right: 1rem;
       @include heart;
 
-        &:hover {
-          background: linear-gradient($secondary-color, $primary-color);
-        }
     }
 
     &__p {
@@ -70,4 +63,10 @@
     }
 
   }
+}
+
+.heart-placement {
+  position: relative;
+  bottom: 2.4rem;
+  left: 3rem;
 }

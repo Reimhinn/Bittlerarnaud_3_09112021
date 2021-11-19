@@ -8,10 +8,25 @@
   background: linear-gradient(#FF79DA, #9356DC);
   animation: spin 1.2s ease-in-out infinite;
   opacity: 0.7;
-  position: absolute;
-  display: none;
 
+    &__background{
+      background-color: white;
+      width: 100vw;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      animation: fade-out 100ms 500ms;
+      display: none;
+    }
 
+    &__wrapper{
+      position: relative;
+    }
 
     &__circle{
       width: 10rem;
@@ -28,11 +43,15 @@
       font-family: 'Shrikhand', cursive;
       opacity: 0.7;
       font-size: 1.5rem;
-      display: none;
     }
 }
 
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+
+@keyframes fade-out {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
 }

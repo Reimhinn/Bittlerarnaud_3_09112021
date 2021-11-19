@@ -9,13 +9,9 @@
   z-index: 100;
   bottom: 5.3rem;
 
-    &__wrapper {
-      margin-left: 2rem;
-      max-width: 1300px;
-    }
-
     &__flex-title {
       display: flex;
+      align-items: center;
     }
 
     &__title {
@@ -27,16 +23,13 @@
     }
 
     &__heart {
-      font-size: 2.5rem;
-      display: flex;
-      align-items: center;
-      margin-right: 4rem;
-      // @include heart;
+      @include heart;
+      left: 1.5rem;
     }
 
-    &__section {
+    // &__section {
 
-    }
+    // }
 
     &__h2 {
       font-size: 1.5rem;
@@ -44,6 +37,7 @@
       opacity: 0.9;
       margin-bottom: 2rem;
       margin-top: 0.7rem;
+      position: relative;
 
       &::before {
         content: '';
@@ -51,7 +45,7 @@
         height: 0.3rem;
         background-color: $tertiary-color;
         position: absolute;
-        margin-top: 2.2rem;
+        top: 2.2rem;
       }
 
     }
@@ -83,7 +77,6 @@
     &__meal {
       background-color: white;
       border-radius: 1.3rem;
-      width: 96%;
       box-shadow: 0px 4px 6px 1px rgb(0 0 0 / 8%);
       margin-left: -0.4rem;
       margin-bottom: 1.4rem;

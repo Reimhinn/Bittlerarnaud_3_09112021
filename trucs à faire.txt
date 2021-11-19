@@ -1,10 +1,9 @@
+animation coeur
+faire le responsive (display flex container ul)
 border shadow sur bouton hover
 animation de selection de plat
 animation d'apparition de plat
+finir le loader
+
 
 A voir pendant le mentorat :
-
-mettre le loader
-régler problème du coeur (flex et animation)
-faire le responsive (voir pour le wrapper)
-interaction pseudo element
