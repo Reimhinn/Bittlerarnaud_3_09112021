@@ -94,8 +94,22 @@
       opacity: 0;
       animation: delay 1s ;
       animation-fill-mode: forwards;
+      display: flex;
+      overflow: hidden;
+
+      &:hover {
+        cursor: pointer;
 
 
+        & > .meals__select {
+          margin-right: 0;
+
+           & > .meals__checkmark {
+             transform: rotate(1turn);
+           }
+        }
+
+      }
 
       @for $i from 2 to 10 {
         &--delay#{$i} {
@@ -108,12 +122,14 @@
       margin: 0rem;
       padding: 1rem 0 0.3rem 1rem;
       font-size: 1.7rem;
+      text-overflow: ellipsis;
+      overflow: hidden;
     }
 
     &__flex {
-      display: flex;
-      justify-content: space-between;
-      padding-bottom: 0.9rem;
+      flex-grow: 1;
+      white-space: nowrap;
+      overflow: hidden;
     }
 
     &__description {
@@ -121,10 +137,38 @@
       padding-left: 1rem;
       font-size: 1.4rem;
       opacity: $local-opacity;
+      padding-bottom: 0.9rem;
+      text-overflow: ellipsis;
+      overflow: hidden;
     }
 
     &__price {
       font-size: 1.4rem;
       padding-right: 2rem;
+      padding-top: 3.2rem;
+    }
+
+    &__select {
+      background-color: $tertiary-color;
+      width: 5.7rem;
+      transition: all 400ms;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: -5.7rem;
+    }
+
+    &__checkmark {
+      background-color: white;
+      height: 2rem;
+      width: 2rem;
+      font-size: 1.3rem;
+      border-radius: 50%;
+      color: $tertiary-color;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transform: rotate(0);
+      transition: all 400ms;
     }
 }

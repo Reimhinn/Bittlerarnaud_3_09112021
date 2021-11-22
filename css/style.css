@@ -149,6 +149,7 @@ body {
   cursor: pointer;
   opacity: 0.9;
   transform: scale(0.99);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
 }
 .presentation__link {
   color: white;
@@ -416,6 +417,7 @@ body {
   cursor: pointer;
   opacity: 0.9;
   transform: scale(0.99);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
 }
 
 .btn-wrapper {
@@ -439,6 +441,17 @@ body {
   opacity: 0;
   animation: delay 1s;
   animation-fill-mode: forwards;
+  display: flex;
+  overflow: hidden;
+}
+.meals__meal:hover {
+  cursor: pointer;
+}
+.meals__meal:hover > .meals__select {
+  margin-right: 0;
+}
+.meals__meal:hover > .meals__select > .meals__checkmark {
+  transform: rotate(1turn);
 }
 .meals__meal--delay2 {
   animation-delay: 300ms;
@@ -468,21 +481,49 @@ body {
   margin: 0rem;
   padding: 1rem 0 0.3rem 1rem;
   font-size: 1.7rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .meals__flex {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 0.9rem;
+  flex-grow: 1;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .meals__description {
   margin: 0;
   padding-left: 1rem;
   font-size: 1.4rem;
   opacity: 0.9;
+  padding-bottom: 0.9rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .meals__price {
   font-size: 1.4rem;
   padding-right: 2rem;
+  padding-top: 3.2rem;
+}
+.meals__select {
+  background-color: #99e2D0;
+  width: 5.7rem;
+  transition: all 400ms;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: -5.7rem;
+}
+.meals__checkmark {
+  background-color: white;
+  height: 2rem;
+  width: 2rem;
+  font-size: 1.3rem;
+  border-radius: 50%;
+  color: #99e2D0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(0);
+  transition: all 400ms;
 }
 
 /*# sourceMappingURL=style.css.map */
