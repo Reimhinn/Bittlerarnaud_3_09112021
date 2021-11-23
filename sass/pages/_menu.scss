@@ -14,6 +14,27 @@
   border-radius: 4rem;
   position: relative;
   bottom: 5.3rem;
+  @media (min-width: 1024px) {
+    left: 7%;
+    max-width: 86%;
+  }
+
+
+    &__section {
+      display: flex;
+      flex-direction: column;
+      @media (min-width: 1024px) {
+        flex-direction: row;
+        justify-content: space-around;
+      }
+    }
+
+    &__flex-section{
+      @media (min-width: 1024px) {
+        margin: 0 3rem;
+      }
+
+    }
 
     &__flex-title {
       display: flex;
@@ -26,6 +47,11 @@
       font-weight: 500;
       font-size: 2.7rem;
       margin-top: 2.9rem;
+      @media (min-width: 1024px) {
+        text-align: center;
+        margin-bottom: 7rem;
+        margin-left: 5rem;
+      }
     }
 
     &__heart {
@@ -122,14 +148,19 @@
       margin: 0rem;
       padding: 1rem 0 0.3rem 1rem;
       font-size: 1.7rem;
+      white-space: nowrap;
       text-overflow: ellipsis;
       overflow: hidden;
+      @media (min-width: 1024px) {
+        font-size: 1.4rem;
+      }
     }
 
     &__flex {
       flex-grow: 1;
       white-space: nowrap;
       overflow: hidden;
+      text-overflow: ellipsis;
     }
 
     &__description {
@@ -140,6 +171,7 @@
       padding-bottom: 0.9rem;
       text-overflow: ellipsis;
       overflow: hidden;
+      white-space: nowrap;
     }
 
     &__price {
