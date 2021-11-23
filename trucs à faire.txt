@@ -1,8 +1,9 @@
-recopier le html pour les 4 pages
-finir le loader
-
-
 A voir pendant le mentorat :
 
 probleme coeur qui dépasse sur la droite
 overfolw hidden ne fontctionne pas comme attendu
+mettre le loader en display none
+
+
+
+recopier le html pour les 4 pages une fois tout terminé en faisant attention aux buttons dans les a

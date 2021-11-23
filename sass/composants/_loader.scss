@@ -20,7 +20,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      animation: fade-out 100ms 500ms;
+      animation: fade-out 1.5s forwards;
       display: none;
     }
 
@@ -52,6 +52,9 @@
 }
 
 @keyframes fade-out {
-  0% { opacity: 1; }
-  100% { opacity: 0; }
+  0% { opacity: 1;}
+
+  60% {opacity:1; }
+
+  100% { opacity: 0;}
 }
