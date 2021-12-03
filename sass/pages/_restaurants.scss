@@ -67,7 +67,10 @@
 
     &__heart {
       @include heart;
-
+      &--full{
+        position: absolute;
+        left: 0;
+      }
     }
 
     &__p {

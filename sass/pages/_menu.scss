@@ -32,6 +32,7 @@
     &__flex-section{
       @media (min-width: 1024px) {
         margin: 0 3rem;
+        width: 100%;
       }
 
     }
@@ -59,8 +60,8 @@
       left: 1.5rem;
 
       &--full {
-        position: relative;
-        left: -2.5rem;
+        position: absolute;
+        left: 0rem;
       }
     }
 

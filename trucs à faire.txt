@@ -1,8 +1,7 @@
 A voir pendant le mentorat :
 
-probleme coeur qui dépasse sur la droite
-overfolw hidden ne fontctionne pas comme attendu
 mettre le loader en display none
+faire que l'emplacement soit un formulaire
 
 
 

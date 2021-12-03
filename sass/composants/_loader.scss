@@ -21,7 +21,6 @@
       justify-content: center;
       align-items: center;
       animation: fade-out 1.5s forwards;
-      display: none;
     }
 
     &__wrapper{
@@ -52,9 +51,18 @@
 }
 
 @keyframes fade-out {
-  0% { opacity: 1;}
-
-  60% {opacity:1; }
-
-  100% { opacity: 0;}
+  0%{
+    opacity: 1;
+  }
+  70%{
+    opacity: 1;
+  }
+  99%{
+    z-index: 3;
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    z-index: -9999;
+  }
 }

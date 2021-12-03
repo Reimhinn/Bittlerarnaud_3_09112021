@@ -32,7 +32,6 @@ body {
   justify-content: center;
   align-items: center;
   animation: fade-out 1.5s forwards;
-  display: none;
 }
 .loader__wrapper {
   position: relative;
@@ -65,11 +64,16 @@ body {
   0% {
     opacity: 1;
   }
-  60% {
+  70% {
     opacity: 1;
+  }
+  99% {
+    z-index: 3;
+    opacity: 0;
   }
   100% {
     opacity: 0;
+    z-index: -9999;
   }
 }
 .header {
@@ -144,14 +148,12 @@ body {
   font-size: 1.4rem;
   font-weight: bold;
   transition: all 500ms;
-  transform: scale(1);
   font-family: "Roboto", sans-serif;
   margin: 0.9rem 0;
 }
 .presentation__button:hover {
   cursor: pointer;
   opacity: 0.9;
-  transform: scale(0.99);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
 }
 .presentation__link {
@@ -191,6 +193,7 @@ body {
   font-weight: bold;
   counter-increment: compteListe;
   position: relative;
+  width: 100%;
 }
 .explanation__list-element::before {
   content: counter(compteListe);
@@ -282,7 +285,7 @@ body {
   margin: 0.3rem 0;
 }
 .restaucard__heart {
-  right: 2.5rem;
+  right: 4rem;
   font-size: 2.5rem;
   position: relative;
   transition: all 200ms;
@@ -302,6 +305,10 @@ body {
 }
 .restaucard__heart--full:hover {
   opacity: 1;
+}
+.restaucard__heart--full {
+  position: absolute;
+  left: 0;
 }
 .restaucard__p {
   margin: 0;
@@ -394,6 +401,7 @@ body {
 @media (min-width: 1024px) {
   .menu__flex-section {
     margin: 0 3rem;
+    width: 100%;
   }
 }
 .menu__flex-title {
@@ -415,7 +423,7 @@ body {
   }
 }
 .menu__heart {
-  right: 2.5rem;
+  right: 4rem;
   font-size: 2.5rem;
   position: relative;
   transition: all 200ms;
@@ -438,8 +446,8 @@ body {
   opacity: 1;
 }
 .menu__heart--full {
-  position: relative;
-  left: -2.5rem;
+  position: absolute;
+  left: 0rem;
 }
 .menu__h2 {
   font-size: 1.5rem;
@@ -470,7 +478,6 @@ body {
   font-size: 1.4rem;
   font-weight: bold;
   transition: all 500ms;
-  transform: scale(1);
   font-family: "Roboto", sans-serif;
   padding: 1.5rem 4.5rem;
   font-weight: 500;
@@ -478,7 +485,6 @@ body {
 .menu__button:hover {
   cursor: pointer;
   opacity: 0.9;
-  transform: scale(0.99);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
 }
 
