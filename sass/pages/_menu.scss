@@ -97,10 +97,6 @@
 
     }
 
-    &__link {
-      @include link;
-    }
-
     &__button {
       @include btn;
       padding: 1.5rem 4.5rem;

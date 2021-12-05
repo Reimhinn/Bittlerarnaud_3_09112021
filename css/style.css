@@ -156,17 +156,14 @@ body {
   transition: all 500ms;
   font-family: "Roboto", sans-serif;
   color: white;
+  text-decoration: none;
   margin: 0.9rem 0;
+  text-decoration: none;
 }
 .presentation__button:hover {
   cursor: pointer;
   opacity: 0.9;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
-}
-.presentation__link {
-  color: white;
-  text-decoration: none;
-  padding: 1.5rem 0;
 }
 
 .explanation__h2 {
@@ -481,11 +478,6 @@ body {
   position: absolute;
   top: 2.2rem;
 }
-.menu__link {
-  color: white;
-  text-decoration: none;
-  padding: 1.5rem 0;
-}
 .menu__button {
   background: linear-gradient(#FF79DA, #9356DC);
   padding: 1.5rem 2rem;
@@ -496,6 +488,7 @@ body {
   transition: all 500ms;
   font-family: "Roboto", sans-serif;
   color: white;
+  text-decoration: none;
   padding: 1.5rem 4.5rem;
   font-weight: 500;
 }

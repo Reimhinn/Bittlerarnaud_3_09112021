@@ -8,18 +8,13 @@
   transition: all 500ms;
   font-family: 'Roboto', sans-serif;
   color: white;
+  text-decoration: none;
 
         &:hover {
           cursor: pointer;
           opacity: 0.9;
           box-shadow: 0 5px 10px rgb(0 0 0 / 25%);
         }
-}
-
-@mixin link {
-  color: white;
-  text-decoration: none;
-  padding: 1.5rem 0;
 }
 
 @mixin heart {
