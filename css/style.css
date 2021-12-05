@@ -155,6 +155,7 @@ body {
   font-weight: bold;
   transition: all 500ms;
   font-family: "Roboto", sans-serif;
+  color: white;
   margin: 0.9rem 0;
 }
 .presentation__button:hover {
@@ -494,6 +495,7 @@ body {
   font-weight: bold;
   transition: all 500ms;
   font-family: "Roboto", sans-serif;
+  color: white;
   padding: 1.5rem 4.5rem;
   font-weight: 500;
 }
