@@ -17,5 +17,12 @@
       color: $tertiary-background-color;
       font-weight: bold;
       opacity: $local-opacity;
+      background-color: #eaeaea;
+      border: none;
+      font-size: 1.6rem;
+    }
+
+    &__i {
+      margin-left: 12rem;
     }
 }

@@ -124,6 +124,12 @@ body {
   color: #353535;
   font-weight: bold;
   opacity: 0.9;
+  background-color: #eaeaea;
+  border: none;
+  font-size: 1.6rem;
+}
+.localisation__i {
+  margin-left: 12rem;
 }
 
 .presentation {
@@ -285,7 +291,6 @@ body {
   margin: 0.3rem 0;
 }
 .restaucard__heart {
-  right: 4rem;
   font-size: 2.5rem;
   position: relative;
   transition: all 200ms;
@@ -317,7 +322,7 @@ body {
 .heart-placement {
   position: relative;
   bottom: 2.4rem;
-  left: 3rem;
+  right: 1rem;
 }
 
 .footer {
@@ -408,9 +413,13 @@ body {
   display: flex;
   align-items: center;
 }
+@media (min-width: 1024px) {
+  .menu__flex-title {
+    justify-content: center;
+  }
+}
 .menu__title {
   font-family: "Shrikhand", cursive;
-  flex-grow: 1;
   font-weight: 500;
   font-size: 2.7rem;
   margin-top: 2.9rem;
@@ -423,11 +432,11 @@ body {
   }
 }
 .menu__heart {
-  right: 4rem;
   font-size: 2.5rem;
   position: relative;
   transition: all 200ms;
-  left: 1.5rem;
+  left: 2rem;
+  top: 0.2rem;
 }
 .menu__heart:hover {
   background: -webkit-linear-gradient(#FF79DA, #9356DC);
@@ -444,6 +453,12 @@ body {
 }
 .menu__heart--full:hover {
   opacity: 1;
+}
+@media (min-width: 1024px) {
+  .menu__heart {
+    top: -2.2rem;
+    margin-right: 4rem;
+  }
 }
 .menu__heart--full {
   position: absolute;

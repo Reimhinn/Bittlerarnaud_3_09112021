@@ -1,8 +1,7 @@
-A voir pendant le mentorat :
+mettre les commentaires
 
-mettre le loader en display none
-faire que l'emplacement soit un formulaire
+vérifier w3c
 
-
+vérifier comptatibilité chrome firefox
 
 recopier le html pour les 4 pages une fois tout terminé en faisant attention aux buttons dans les a
