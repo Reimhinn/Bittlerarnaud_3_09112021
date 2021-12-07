@@ -159,12 +159,13 @@ body {
   font-family: "Roboto", sans-serif;
   color: white;
   text-decoration: none;
+  opacity: 0.9;
   margin: 0.9rem 0;
   text-decoration: none;
 }
 .presentation__button:hover {
   cursor: pointer;
-  opacity: 0.9;
+  opacity: 1;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
 }
 
@@ -504,12 +505,13 @@ body {
   font-family: "Roboto", sans-serif;
   color: white;
   text-decoration: none;
+  opacity: 0.9;
   padding: 1.5rem 4.5rem;
   font-weight: 500;
 }
 .menu__button:hover {
   cursor: pointer;
-  opacity: 0.9;
+  opacity: 1;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
 }
 
