@@ -1,9 +1,3 @@
-mettre les commentaires
+faire les alt
 
-margin buttons
-
-vérifier w3c
-
-vérifier comptatibilité chrome firefox
-
-recopier le html pour les 4 pages une fois tout terminé en faisant attention aux buttons dans les a
+revérifier w3c
