@@ -1,5 +1,7 @@
 mettre les commentaires
 
+margin buttons
+
 vérifier w3c
 
 vérifier comptatibilité chrome firefox
